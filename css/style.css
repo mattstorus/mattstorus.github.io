@@ -1,0 +1,322 @@
+  * {
+    -moz-box-sizing: border-box;
+    /* Firexfox */
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box;
+    /* IE */
+  }
+  /* Clear fix hack */
+
+  .clearfix {
+    clear: both;
+  }
+  .clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: #0f151c;
+    font-size: 22px;
+    line-height: 1.4;
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+    min-width: 640px;
+  }
+  div {
+    margin: 0;
+    /*cursor: pointer;*/
+  }
+  a {
+    text-decoration: none;
+  }
+  /*ALL THE DIVS*/
+  /*TOP MENU ISH*/
+
+  .topmenu {
+    width: 100%;
+    height: auto;
+    background-color: #0f151c;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6) inset;
+    z-index: 1999;
+    padding: 140px 40px 40px 120px;
+    display: none;
+  }
+  .topmenu-item {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    transition: background 0.5s linear;
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+  .topmenu-item-title {
+    font-size: 16px;
+    font-weight: 300;
+    color: #dddddd;
+  }
+  .topmenu-item-subtitle {
+    font-size: 12px;
+    font-weight: 300;
+    color: #aaaaaa;
+  }
+  .topmenu-item:hover .topmenu-item-title {
+    color: #ffffff;
+  }
+  .topmenu-item:hover .topmenu-item-subtitle {
+    color: #ffffff;
+  }
+  /*HEADER ISH*/
+
+  .header-all {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 120px;
+    padding: 20px 20px;
+    /*background-color: RGBA(0, 0, 0, 0.25);*/
+  }
+  .header-wrap {
+    position: relative;
+    float: left;
+    /*width: 100%;*/
+  }
+  .header-icon {
+    position: absolute;
+    float: left;
+    width: 100px;
+    cursor: pointer;
+  }
+  .header-name {
+    color: #dddddd;
+    position: absolute;
+    float: left;
+    font-size: 12px;
+    top: 45%;
+    transform: translate(0%, -48%);
+    margin-left: 20px;
+  }
+  .header-menu {
+    height: 120px;
+    float: right;
+    transform: translate(0%, 16%);
+    cursor: pointer;
+  }
+  /*CONTAINER ISH*/
+
+  .container {
+    width: 100vw;
+  }
+  .cover {
+    position: relative;
+  }
+
+  .cover-fader{
+    background-color: #0f151c;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+  }
+  .div-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    opacity: 0;
+    z-index: 9999;
+  }
+  .div-text-title {
+    font-weight: 700;
+    font-size: 21px;
+    color: #eeeeee;
+  }
+  .div-text-subtitle {
+    font-size: 16px;
+    color: #dddddd;
+  }
+  .two-two {
+    width: 50vw;
+    height: 50vw;
+    float: left;
+  }
+  .two-two-intro {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  .one-one-intro {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  .intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    margin: auto;
+  }
+  .outro-text {
+    font-size: 16px;
+    font-weight: 300;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  .two-one {
+    width: 50vw;
+    height: 25vw;
+    float: left;
+  }
+  .two-one-inside {
+    width: 50vw;
+    height: 25vw;
+    float: left;
+  }
+  .one-one {
+    width: 25vw;
+    height: 25vw;
+    float: left;
+  }
+  .one-one-inside {
+    width: 25vw;
+    height: 25vw;
+    float: left;
+  }
+  .two-two-container {
+    width: 50vw;
+    height: 50vw;
+    float: left;
+  }
+
+  .follow-images{
+    position: absolute;
+    width: 100%;
+    top: 55%;
+  }
+
+  .follow-images img{
+    margin: 10px 10px;
+  }
+  /*IMAGES*/
+
+  .profile-cover {
+    background: url('../img/profile-cover.jpg');
+  }
+  .img-21-web-cover {
+    background: url('../img/21-web-cover.jpg');
+  }
+  .img-21-product-cover {
+    background: url('../img/21-product-cover.jpg');
+  }
+  .img-samsung-iot-cover {
+    background: url('../img/samsung-iot-cover.png');
+  }
+  .img-samsung-wearable-cover {
+    background: url('../img/samsung-wearable-cover.png');
+  }
+  .img-samsung-app-cover {
+    background: url('../img/samsung-app-cover.png');
+  }
+  .img-psc-datong-cover {
+    background: url('../img/psc-datong-cover.jpg');
+  }
+  .img-psc-losgatos-cover {
+    background: url('../img/psc-losgatos-cover.jpg');
+  }
+  .img-psc-nyc-cover {
+    background: url('../img/psc-nyc-cover.jpg');
+  }
+  .img-psc-ordos-cover {
+    background: url('../img/psc-ordos-cover.jpg');
+  }
+  .img-psc-stadium-cover {
+    background: url('../img/psc-stadium-cover.jpg');
+  }
+  .img-rvtr-cover {
+    background: url('../img/rvtr-cover.jpg');
+  }
+  .img-gsd-brooklynzoo-cover {
+    background: url('../img/gsd-brooklynzoo-cover.jpg');
+  }
+  .img-gsd-church-cover {
+    background: url('../img/gsd-church-cover.jpg');
+  }
+  .img-gsd-company-cover {
+    background: url('../img/gsd-company-cover.jpg');
+  }
+  .img-gsd-house-cover {
+    background: url('../img/gsd-house-cover.jpg');
+  }
+  .img-gsd-video-cover {
+    background: url('../img/gsd-video-cover.jpg');
+  }
+  .img-waterloo-augustus-cover {
+    background: url('../img/waterloo-augustus-cover.jpg');
+  }
+  .img-waterloo-textile-cover {
+    background: url('../img/waterloo-textile-cover.jpg');
+  }
+  .img-art-cover {
+    background: url('../img/art-cover.jpg');
+  }
+  .cover {
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  /*MEDIA QUERY*/
+
+  @media only screen and (max-width: 1024px) {
+    .two-two {
+      width: 100vw;
+      height: 100vw;
+      float: left;
+    }
+    .two-one {
+      width: 100vw;
+      height: 50vw;
+      float: left;
+    }
+    .two-one-inside {
+      width: 100vw;
+      height: 50vw;
+      float: left;
+    }
+    .one-one {
+      width: 50vw;
+      height: 50vw;
+      float: left;
+    }
+    .one-one-inside {
+      width: 50vw;
+      height: 50vw;
+      float: left;
+    }
+    .two-two-container {
+      width: 100vw;
+      height: 100vw;
+      float: left;
+    }
+  }
