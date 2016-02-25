@@ -39,6 +39,13 @@
   }
   a {
     text-decoration: none;
+    color: white;
+  }
+
+  h1{
+    font-size: 36px;
+    font-weight: 400;
+    padding-bottom: 24px;
   }
   /*ALL THE DIVS*/
   /*TOP MENU ISH*/
@@ -122,33 +129,19 @@
   .cover {
     position: relative;
   }
-
-  .cover-fader{
+  .cover-fader {
     background-color: #0f151c;
     width: 100%;
     height: 100%;
     position: absolute;
     opacity: 0;
   }
-  .div-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    opacity: 0;
-    z-index: 9999;
-  }
-  .div-text-title {
-    font-weight: 700;
-    font-size: 21px;
-    color: #eeeeee;
-  }
-  .div-text-subtitle {
-    font-size: 16px;
-    color: #dddddd;
+  /*TYPES OF CONTAINERS*/
+
+  .four-two {
+    width: 100vw;
+    height: 50vw;
+    float: left;
   }
   .two-two {
     width: 50vw;
@@ -164,25 +157,6 @@
     height: 100%;
     width: 100%;
     position: relative;
-  }
-  .intro-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    margin: auto;
-  }
-  .outro-text {
-    font-size: 16px;
-    font-weight: 300;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    margin: auto;
-    text-align: center;
   }
   .two-one {
     width: 50vw;
@@ -210,16 +184,122 @@
     float: left;
   }
 
-  .follow-images{
+  .four-one {
+    width: 100vw;
+    height: 10vw;
+    float: left;
+    /*background-color: RGBA(0,70,240,0.5);*/
+  }
+
+
+
+  .two-one-next {
+    width: 50vw;
+    height: 12vw;
+    float: left;
+    background-color: RGBA(0,70,240,0.5);
+    box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.25) inset;
+  }
+
+
+
+
+
+  /*TEXT SHIT*/
+
+  .div-text-project {
+    padding: 24px 48px 24px 120px;
+
+    height: 40%;
+    width: 50%;
+    text-align: left;
+    opacity: 1;
+
+    background-color: RGBA(0,70,240,0.5);
+overflow: hidden;
+  }
+
+  .blank-top{
+    height: 60%;
+    width: 100%;
+  }
+
+
+
+
+  .div-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    opacity: 0;
+    z-index: 9999;
+  }
+
+  .div-text-title {
+    font-weight: 700;
+    font-size: 21px;
+    color: #eeeeee;
+  }
+  .div-text-subtitle {
+    font-size: 16px;
+    color: #dddddd;
+  }
+
+  .div-text-body{
+    font-size: 14px;
+    color: #eeeeee;
+    padding-top: 20px;
+  }
+  .intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    margin: auto;
+  }
+  .outro-text {
+    font-size: 16px;
+    font-weight: 300;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  .follow-images {
     position: absolute;
     width: 100%;
     top: 55%;
     text-align: center;
   }
-
-  .follow-images img{
+  .follow-images img {
     margin: 10px 10px;
   }
+
+
+
+  .div-text-next {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    z-index: 9999;
+  }
+
+
+
+
+
   /*IMAGES*/
 
   .profile-cover {
@@ -286,7 +366,45 @@
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25) inset;
   }
+
+
+
+
+
+
+
+  /*ALL THE PROJECT01 IMAGES*/
+
+  .img-21-web-01 {
+    background: url('../img/21-web-01.jpg');
+    background-position: center;
+    box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.25) inset;
+  }
+
+  .img-21-web-02{
+    background: url('../img/21-web-02.jpg');
+    background-position: bottom;
+        box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.25) inset;
+  }
+
+  .img-21-web-03 {
+    background: url('../img/21-web-03.jpg');
+    background-position: middle;
+        box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.25) inset;
+  }
+
+  .img-21-web-04 {
+    background: url('../img/21-web-04.jpg');
+    background-position: center;
+    box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.25) inset;
+  }
+
+
+
+
+
   /*MEDIA QUERY*/
 
   @media only screen and (max-width: 1024px) {
@@ -319,5 +437,10 @@
       width: 100vw;
       height: 100vw;
       float: left;
+    }
+
+    .div-text-project {
+      width: 100%;
+      padding-right: 120px;
     }
   }
