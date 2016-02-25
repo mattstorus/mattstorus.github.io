@@ -2,6 +2,11 @@ $('document').ready(function() {
 
 
   $('.header-menu').click(function() {
+    $("html, body").animate({
+    scrollTop:0
+  },"fast");
+
+
     $('.topmenu').slideToggle();
 
     var whichImage = $(this).children('img').attr('src');
@@ -13,8 +18,7 @@ $('document').ready(function() {
     }
   });
 
-  $('.cover').hover(
-      function(){
+  $('.cover').hover(function(){
         // $(this).fadeTo('slow', 0.15);
         $(this).find('.div-text').fadeTo('slow',1.0);
         $(this).find('.cover-fader').fadeTo('slow',0.6);
