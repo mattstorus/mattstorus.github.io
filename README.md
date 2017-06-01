@@ -1,2 +1,2 @@
-# Porftolio_Final
-Final GA Portfolio
+# Porftolio
+Generic structure for a porfolio website
